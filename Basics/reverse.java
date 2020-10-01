@@ -15,7 +15,20 @@ class reverse
 		{
 			a[i] = n.charAt(i);
 		}
-		for(i=l-1;i>=0;i--)
+		
+		int i=0;
+		int j=a.length-1;
+		while(i<j){
+			int temp=a[i];
+			a[i]=a[j];
+			a[j]=temp;
+		
+		i++;
+		j--;}
+		// now the list is sctually reversed in small time complexity.
+		
+		
+		for(i=0;i<l;i++)
 		{
 			System.out.print(a[i]);
 		}
